@@ -13,13 +13,7 @@ class Report {
     }
 
     public void output(Output outputSource) {
-        if (outputSource instanceof PrintReport) {
+
             outputSource.output(items);
-        }
-        if (outputSource instanceof DisplayReport) {
-            outputSource.output(items);
-        }
-        //PrintReport reportPrint = new PrintReport();
-        //reportPrint.output(items);
     }
 }
